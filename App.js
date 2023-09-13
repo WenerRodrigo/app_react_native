@@ -1,20 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import Cesta from './src/screens/Cesta';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Bem vindo ao meu App!!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+      <StatusBar />
+      <Cesta />
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#ccc',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
