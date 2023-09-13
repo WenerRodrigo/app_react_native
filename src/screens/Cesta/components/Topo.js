@@ -6,18 +6,16 @@ import topo from '../../../../assets/topo.png'
 
 const width = Dimensions.get('screen').width;
 
-
-export default function Topo({ title }) {
+export default function Topo({ titulo }) {
     return (
         <>
             <Image source={topo} style={estilos.topo} />
             <Texto style={estilos.title}>
-                {title}
+                {titulo}
             </Texto>
         </>
     )
 }
-
 
 const estilos = StyleSheet.create({
     topo: {

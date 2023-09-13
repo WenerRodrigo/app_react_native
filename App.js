@@ -1,24 +1,23 @@
-import { StatusBar, SafeAreaView, View } from 'react-native';
+import { StatusBar, SafeAreaView } from 'react-native';
 import Cesta from './src/screens/Cesta';
-import { Montserrat_400Regular,Montserrat_700Bold } from '@expo-google-fonts/montserrat';
-import { useFonts } from 'expo-font';
+import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
 import mock from './src/mocks/cesta';
 import AppLoading from 'expo-app-loading';
 
 export default function App() {
 
-  const [fontesCarregada] = useFonts({
+  const [fonteCarregada] = useFonts({
     "MontserratRegular": Montserrat_400Regular,
     "MontserratBold": Montserrat_700Bold,
   
   });
 
-  if (!fontesCarregada) {
+  if (!fonteCarregada) {
     return <AppLoading />
   }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar />
       <Cesta {...mock}/>
     </SafeAreaView>

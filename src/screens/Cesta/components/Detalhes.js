@@ -1,9 +1,6 @@
 import React from 'react';
-import { Button, Image, StyleSheet, View, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, View, TouchableOpacity } from 'react-native';
 import Texto from '../../../components/Texto';
-import logo from '../../../../assets/logo.png'
-
-
 
 
 export default function Detalhes({ nome, logoFazenda, nomeFazenda, descricao, preco, botao}) {
